@@ -22,7 +22,7 @@ where
     volume is not null and 
     company is not null and 
     load_date is not null and 
-    load_date BETWEEN DATE('2025-04-17') AND DATE('2025-04-18')  --subject to change the end date will become the start date for next run
+    load_date BETWEEN DATE('2025-04-20') AND DATE('2025-04-26')  --subject to change the end date will become the start date for next run
 )
 select * from cte
 
