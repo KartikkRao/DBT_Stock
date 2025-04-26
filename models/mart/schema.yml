@@ -1,0 +1,4 @@
+sources:
+  - name: stocks_data    # <-- this is your dataset name
+    tables:
+      - name: company      # <-- this is the actual table name inside the dataset
