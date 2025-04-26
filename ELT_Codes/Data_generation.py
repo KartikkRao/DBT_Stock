@@ -1,3 +1,4 @@
+# Remember to add imports in the requirement.txt otherwise you will get import error
 import functions_framework
 import pandas as pd
 import requests
@@ -15,7 +16,7 @@ def data_generate(request):
     rows = []
 
     for symbol in symbols:
-        url =f'https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY_ADJUSTED&symbol={symbol}&datatype=csv&apikey=9UPZG2UB673LBBWC'
+        url =f'https://www.alphavantage.co/query?function=TIME_SERIES_WEEKLY_ADJUSTED&symbol={symbol}&datatype=csv&apikey=your_key'
         res = requests.get(url)
 
         if res.status_code == 200:
